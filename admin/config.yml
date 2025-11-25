@@ -8,23 +8,28 @@ public_folder: "/images/uploads"
 collections:
   - name: "settings"
     label: "Portfolio Content"
-    file: "static/portfolio.json"
-    fields:
-      - { label: "Site Title", name: "siteTitle", widget: "string" }
-      - { label: "Hero Title", name: "heroTitle", widget: "string" }
-      - { label: "Hero Subtitle", name: "heroSubtitle", widget: "string" }
-      - { label: "About", name: "about", widget: "text" }
-      - { label: "Email", name: "email", widget: "string" }
-      - { label: "LinkedIn", name: "linkedin", widget: "string" }
-      - { label: "Resume link", name: "resume", widget: "string" }
-      - label: "Skills"
-        name: "skills"
-        widget: "list"
-        field: { label: "Skill", name: "skill", widget: "string" }
-      - label: "Projects"
-        name: "projects"
-        widget: "list"
+    files:
+      - name: "portfolio"
+        label: "Site Content"
+        file: "static/portfolio.json"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Image", name: "image", widget: "image" }
+          - { name: "siteTitle", label: "Site Title", widget: "string" }
+          - { name: "heroTitle", label: "Hero Title", widget: "string" }
+          - { name: "heroSubtitle", label: "Hero Subtitle", widget: "text" }
+          - { name: "about", label: "About Text", widget: "text" }
+          - { name: "email", label: "Email", widget: "string" }
+          - { name: "linkedin", label: "LinkedIn", widget: "string" }
+          - { name: "resume", label: "Resume PDF URL", widget: "string", required: false }
+
+          - name: "skills"
+            label: "Skills"
+            widget: "list"
+            field: { label: Skill, name: skill, widget: string }
+
+          - name: "projects"
+            label: "Projects"
+            widget: "list"
+            fields:
+              - { name: "title", label: "Project Title", widget: "string" }
+              - { name: "description", label: "Description", widget: "text", required: false }
+              - { name: "image", label: "Image", widget: "image" }
