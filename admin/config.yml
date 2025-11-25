@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: muhammednajeebay/suvarna_portfolio
   branch: main
 
 media_folder: "images/uploads"
@@ -13,7 +14,6 @@ collections:
         label: "Site Content"
         file: "static/portfolio.json"
         fields:
-          # Read-only site-level metadata (visible but not editable)
           - { name: "siteTitle", label: "Site Title", widget: "readonly" }
           - { name: "heroTitle", label: "Hero Title", widget: "readonly" }
           - { name: "heroSubtitle", label: "Hero Subtitle", widget: "readonly" }
@@ -22,23 +22,17 @@ collections:
           - { name: "linkedin", label: "LinkedIn", widget: "readonly" }
           - { name: "resume", label: "Resume PDF URL", widget: "readonly", required: false }
 
-          # Skills are visible but locked (no add / delete)
           - name: "skills"
             label: "Skills"
             widget: "list"
-            field: { label: "Skill", name: "skill", widget: "string" }
-            hint: "Skills are read-only in this CMS (edit in repo if needed)."
             allow_add: false
             allow_delete: false
-            # The UI will show the list but the controls for add/delete are hidden.
+            field: { label: Skill, name: skill, widget: string }
 
-          # Editable projects only — list items can be added/removed/edited
           - name: "projects"
             label: "Projects"
             widget: "list"
-            required: false
-            summary: "{{title}}"
             fields:
               - { name: "title", label: "Project Title", widget: "string" }
-              - { name: "description", label: "Description", widget: "text", required: false }
-              - { name: "image", label: "Image", widget: "image", required: false }
+              - { name: "description", label: "Description", widget: "text" }
+              - { name: "image", label: "Image", widget: "image" }
