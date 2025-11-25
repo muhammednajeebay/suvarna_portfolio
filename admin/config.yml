@@ -2,6 +2,7 @@ backend:
   name: github
   repo: muhammednajeebay/suvarna_portfolio
   branch: main
+  open_authoring: false
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -14,25 +15,25 @@ collections:
         label: "Site Content"
         file: "static/portfolio.json"
         fields:
-          - { name: "siteTitle", label: "Site Title", widget: "readonly" }
-          - { name: "heroTitle", label: "Hero Title", widget: "readonly" }
-          - { name: "heroSubtitle", label: "Hero Subtitle", widget: "readonly" }
-          - { name: "about", label: "About Text", widget: "readonly" }
-          - { name: "email", label: "Email", widget: "readonly" }
-          - { name: "linkedin", label: "LinkedIn", widget: "readonly" }
-          - { name: "resume", label: "Resume PDF URL", widget: "readonly", required: false }
+          - { name: "siteTitle", label: "Site Title", widget: "string", required: false }
+          - { name: "heroTitle", label: "Hero Title", widget: "string", required: false }
+          - { name: "heroSubtitle", label: "Hero Subtitle", widget: "string", required: false }
+          - { name: "about", label: "About Text", widget: "text", required: false }
+          - { name: "email", label: "Email", widget: "string", required: false }
+          - { name: "linkedin", label: "LinkedIn", widget: "string", required: false }
+          - { name: "resume", label: "Resume PDF URL", widget: "string", required: false }
 
           - name: "skills"
             label: "Skills"
             widget: "list"
+            field: { label: Skill, name: skill, widget: string }
             allow_add: false
             allow_delete: false
-            field: { label: Skill, name: skill, widget: string }
 
           - name: "projects"
             label: "Projects"
             widget: "list"
             fields:
               - { name: "title", label: "Project Title", widget: "string" }
-              - { name: "description", label: "Description", widget: "text" }
+              - { name: "description", label: "Description", widget: "text", required: false }
               - { name: "image", label: "Image", widget: "image" }
