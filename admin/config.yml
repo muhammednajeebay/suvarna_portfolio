@@ -13,23 +13,28 @@ collections:
         label: "Site Content"
         file: "static/portfolio.json"
         fields:
-          - { name: "siteTitle", label: "Site Title", widget: "string" }
-          - { name: "heroTitle", label: "Hero Title", widget: "string" }
-          - { name: "heroSubtitle", label: "Hero Subtitle", widget: "text" }
-          - { name: "about", label: "About Text", widget: "text" }
-          - { name: "email", label: "Email", widget: "string" }
-          - { name: "linkedin", label: "LinkedIn", widget: "string" }
-          - { name: "resume", label: "Resume PDF URL", widget: "string", required: false }
+          - { name: "siteTitle", label: "Site Title", widget: "readonly" }
+          - { name: "heroTitle", label: "Hero Title", widget: "readonly" }
+          - { name: "heroSubtitle", label: "Hero Subtitle", widget: "readonly" }
+          - { name: "about", label: "About Text", widget: "readonly" }
+          - { name: "email", label: "Email", widget: "readonly" }
+          - { name: "linkedin", label: "LinkedIn", widget: "readonly" }
+          - { name: "resume", label: "Resume PDF URL", widget: "readonly", required: false }
 
+          # Visible but locked
           - name: "skills"
             label: "Skills"
             widget: "list"
             field: { label: Skill, name: skill, widget: string }
+            hint: "Edit disabled"
+            allow_add: false
+            allow_delete: false
 
+          # Editable projects only
           - name: "projects"
             label: "Projects"
             widget: "list"
             fields:
               - { name: "title", label: "Project Title", widget: "string" }
-              - { name: "description", label: "Description", widget: "text", required: false }
+              - { name: "description", label: "Description", widget: "text" }
               - { name: "image", label: "Image", widget: "image" }
