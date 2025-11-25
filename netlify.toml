@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+
+# Required for Netlify CMS (admin panel)
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
+
+# Optional: Catch-all route for future SPA behavior
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
