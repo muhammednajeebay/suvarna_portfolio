@@ -2,31 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Admin — CMS</title>
-
-    <!-- Netlify CMS Script -->
-    <script src="https://unpkg.com/netlify-cms@^2.0.0"></script>
-
-    <!-- Load your CMS config -->
-    <script>
-      window.CMS_MANUAL_INIT = true;
-      document.addEventListener("DOMContentLoaded", function () {
-        fetch("/admin/config.yml", { cache: "no-store" })
-          .then(r => r.text())
-          .then(cfg => {
-            CMS.init({ config: YAML.parse(cfg) });
-          })
-          .catch(err => {
-            console.error("CMS config failed to load", err);
-          });
-      });
-    </script>
-
-    <!-- YAML parser required -->
-    <script src="https://cdn.jsdelivr.net/npm/js-yaml@3.14.0/dist/js-yaml.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
+    <!-- Load Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
+
+    <!-- Initialize CMS -->
+    <script>
+      CMS.init();
+    </script>
   </body>
 </html>
