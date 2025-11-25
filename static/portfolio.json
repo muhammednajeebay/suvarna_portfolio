@@ -1,0 +1,49 @@
+{
+    "siteTitle": "Suvarnna Radhakrishnan",
+    "heroTitle": "Content Writer • SEO Specialist • Brand Storyteller",
+    "heroSubtitle": "I write email, SEO, web, and social media content that connects, ranks, and converts.",
+    "about": "I craft words that move readers to click, brands to grow, and strategies to perform. My work blends storytelling, SEO, and audience psychology — all with a clear focus on reaching the right people in ways that truly resonate. Whether it’s scaling organic traffic, boosting engagement, or building a content engine from scratch, I bring structure, clarity, and narrative consistency to every piece I write. My approach is simple: write with purpose, precision, and measurable performance.",
+    "email": "suvarnna@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/suvarnna/",
+    "resume": "#",
+    "skills": [
+      "Copywriting",
+      "SEO Copywriting",
+      "Web Content Writing",
+      "Content Strategy",
+      "Storytelling",
+      "Blog Writing",
+      "Email Marketing",
+      "Social Media Marketing",
+      "Digital Marketing",
+      "Audience Research",
+      "Brand Messaging",
+      "Project Management",
+      "Analytical Skills",
+      "Communication",
+      "Coordination"
+    ],
+    "projects": [
+      {
+        "title": "SEO Blog Series for SaaS",
+        "description": "High-intent SEO blog series created to improve organic visibility and position the brand as a trusted authority.",
+        "image": "/mnt/data/676bf5bf-7945-4041-bed2-b7ad33e55cae.png"
+      },
+      {
+        "title": "Email Marketing Launch Campaign",
+        "description": "Conversion-oriented email flows designed to increase opens, clicks, and user engagement for a product launch.",
+        "image": "/images/uploads/email-campaign.jpg"
+      },
+      {
+        "title": "Social Media Content Engine",
+        "description": "A structured content system built to increase engagement and establish a consistent brand voice across platforms.",
+        "image": "/images/uploads/social-content.jpg"
+      },
+      {
+        "title": "Website Copy Revamp",
+        "description": "Landing page and service page copy optimized for clarity, SEO, and conversion-driven messaging.",
+        "image": "/images/uploads/web-copy.jpg"
+      }
+    ]
+  }
+  

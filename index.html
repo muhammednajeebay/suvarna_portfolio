@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Suvarnna — Creative Portfolio</title>
+    <meta name="description" content="Suvarnna Radhakrishnan — Content Writer, SEO specialist and brand storyteller." />
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="/">Suvarnna</a>
+
+            <nav class="nav" id="siteNav">
+                <a href="#projects">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="cta">Contact</a>
+            </nav>
+
+            <button id="menuBtn" class="menu-btn" aria-expanded="false" aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero" id="heroSection">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <h1 id="heroTitle" class="hero-title">Content Writer • SEO Specialist • Brand Storyteller</h1>
+                    <p id="heroSubtitle" class="hero-sub muted">
+                        I write email, SEO, web, and social media content that connects, ranks, and converts.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn primary">View Work</a>
+                        <a href="#about" class="btn ghost">About</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="card-visual floating" id="heroCard">
+                        <img id="heroImage" src="images/uploads/profile.png" alt="Profile"
+                            loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-shapes" aria-hidden="true">
+                <span class="shape s1"></span>
+                <span class="shape s2"></span>
+                <span class="shape s3"></span>
+            </div>
+
+            <svg class="hero-curves" viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,40 C360,120 1080,0 1440,40 L1440 120 L0 120 Z"></path>
+            </svg>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section -soft">
+            <div class="container">
+                <h2 class="section-title">Selected Projects</h2>
+                <div id="projectGrid" class="project-grid"></div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section -white">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">About</h2>
+                    <p id="aboutText">
+                        I craft words that move readers to click, brands to grow, and strategies to perform. My work blends storytelling, SEO, and audience psychology — all with a clear focus on reaching the right people in ways that truly resonate. Whether it’s scaling organic traffic, boosting engagement, or building a content engine from scratch, I bring structure, clarity, and narrative consistency to every piece I write. My approach is simple: write with purpose, precision, and measurable performance.
+                    </p>
+
+                    <h3 class="section-subtitle">Skills</h3>
+
+                    <!-- NEW SKILL BADGE LAYOUT C -->
+                    <div id="skillsBadges" class="skills-badges"></div>
+
+                    <p class="muted">Download resume — <a href="#" id="resumeLink">Resume (PDF)</a></p>
+                </div>
+
+                <aside class="about-card floating-sm">
+                    <div class="meta">
+                        <strong id="siteTitle">Suvarnna Radhakrishnan</strong>
+                        <span id="role">Content Writer</span>
+                    </div>
+
+                    <div class="socials">
+                        <a id="linkedinLink" href="https://www.linkedin.com/in/suvarnna/"
+                            target="_blank" rel="noopener">LinkedIn</a>
+                        <a id="emailLink" href="mailto:suvarnna@gmail.com">Email</a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section -accent">
+            <div class="container contact-inner">
+                <h2 class="section-title">Let's build something</h2>
+                <p class="muted">
+                    Email — <a id="contactEmail" href="mailto:suvarnna@gmail.com">suvarnna@gmail.com</a>
+                </p>
+                <p class="muted">
+                    LinkedIn — <a href="https://www.linkedin.com/in/suvarnna/" target="_blank"
+                        rel="noopener">https://www.linkedin.com/in/suvarnna/</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Suvarnna — Built with care.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+</body>
+
+</html>
